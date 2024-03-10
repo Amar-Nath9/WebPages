@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LunchCheck App</title>
+    <!-- Include AngularJS -->
+    <script src="angular.min.js"></script>
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.2/angular.min.js"></script>-->
+</head>
+<body ng-app="LunchCheck">
+    <div ng-controller="LunchCheckController">
+        <h1>LunchCheck App</h1>
+        <p>Enter comma-separated items</p>
+        <input type="text" ng-model="lunchItems" placeholder="Enter items...">
+        <button ng-click="checkLunch()">Check</button>
+        <p>{{message}}</p>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
